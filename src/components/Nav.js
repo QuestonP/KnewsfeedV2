@@ -1,46 +1,36 @@
-
+import 'bootstrap/dist/css/bootstrap.css';
+import NavButtons from './NavButtons';
 
 function Nav() {
 
     const navButtonStyle = {
-        listStyle: 'none', 
-        display: 'flex',
-        justifyContent: 'space-around'
+        listStyle: 'none'
     };
-    
     return (
-        <div className="nav-container"> 
+        <div className="nav-container border border-black p-1 m-0" > 
             <nav className="navbar">
-            <h1>KnewsFeed</h1>
-            <ul style={navButtonStyle}>
-                <li> 
-                    <button>
-                        Tech
-                    </button>
+
+            <h1 className='m-0 p-2'>KnewsFeed.</h1>
+
+            <ul style={navButtonStyle} className="btn-group m-2">
+                <li className='m-1'> 
+                   <NavButtons name='Tech' color='primary'/>
                 </li>
 
-                <li> 
-                    <button>
-                        Sports
-                    </button>
+                <li className='m-1'> 
+                    <NavButtons name='Sports' color='success'/>
                 </li>
 
-                <li> 
-                    <button>
-                        Health
-                    </button>
+                <li className='m-1'> 
+                    <NavButtons name='Health' color='danger'/>
                 </li>
 
-                <li> 
-                    <button>
-                        Entertainment
-                    </button>
+                <li className='m-1'> 
+                    <NavButtons name='Entertainment' color='warning'/>
                 </li>
 
-                <li> 
-                    <button>
-                        Science
-                    </button>
+                <li className='m-1' > 
+                    <NavButtons name='Science' color='info'/>
                 </li>
 
             </ul>

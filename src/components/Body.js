@@ -1,9 +1,11 @@
-
+import News from './News'
+import Headlines from './Headlines'
 
 function Body() {
     return (
-        <div className="bodyContainer">
-            
+        <div className="body-container">
+            <Headlines /> 
+            <News /> 
         </div>
     );
 }
