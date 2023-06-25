@@ -3,7 +3,7 @@ import Headlines from './Headlines'
 
 function Body() {
     return (
-        <div className="body-container">
+        <div className="body-container ">
             <Headlines /> 
             <News /> 
         </div>

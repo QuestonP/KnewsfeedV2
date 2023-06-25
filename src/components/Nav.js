@@ -7,7 +7,7 @@ function Nav() {
         listStyle: 'none'
     };
     return (
-        <div className="nav-container border border-black p-1 m-0" > 
+        <div className="nav-container border border-black p-1 m-0 " > 
             <nav className="navbar">
 
             <h1 className='m-0 p-2'>KnewsFeed.</h1>
